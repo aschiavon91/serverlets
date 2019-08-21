@@ -1,0 +1,18 @@
+org: aschiavon91
+app: servelets
+service: Serverlets
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+  stage: dev
+  region: us-east-2
+
+functions:
+  hello: 
+    handler: dist/hello.handler
+    events:
+      - http:
+          path: hello
+          method: GET
+          cors: true
