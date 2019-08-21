@@ -1,5 +1,5 @@
 org: aschiavon91
-app: servelets
+app: serverlets
 service: Serverlets
 
 provider:
